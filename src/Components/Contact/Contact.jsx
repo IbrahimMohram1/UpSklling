@@ -39,14 +39,12 @@ export default function Contact() {
     try {
       setLoading(true)
       let { data } = await axios.post('https://upskilling-egypt.com:3001/contact', values)
-      console.log('Response:', data)
       setApiError('')
     setSuccess(data.message);
       formik.resetForm()
     } catch (error) {
-      console.log(error)
-      setApiError(error.response?.data?.message || 'Something went wrong!')
-    } finally {
+ const errorMsg = error.response?.data?.errors?.[0]?.msg || 'Something went wrong!';
+  setApiError(errorMsg);    } finally {
       setLoading(false)
     }
   }
