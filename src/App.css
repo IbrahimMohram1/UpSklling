@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+    background-color: #f3eaea;
+}
+
+.clip {
+    clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
+}
+
+
+.clip2 {
+    clip-path: polygon(44% 0, 100% 0, 100% 100%, 2% 100%);
+}
