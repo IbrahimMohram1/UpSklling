@@ -1,6 +1,7 @@
 import React from 'react'
 
 import img from "../../assets/e27de81ebcd4ea40fd6f4f4dff686cafacecaf9e.jpg"
+import trackImg from '../../assets/Track.png'
 export default function Hero() {
   return (
   <>
@@ -15,7 +16,8 @@ export default function Hero() {
 
 
          <div className=" absolute h-full  m-auto text-center inset-0 flex flex-col justify-around items-center ">
-        <div className='text-center'>
+        <div className='text-center flex gap-x-4 justify-center items-center '>
+          <img src={trackImg} alt="Track" className='object-contain w-16'  />
         <h1 className='font-bold text-4xl tracking-widest uppercase   text-[#5180F6]'>Round Rock  <span className='font-medium flex tracking-widest text-[#5180F6] '>Trush Hauling</span> </h1>
        
         </div>
